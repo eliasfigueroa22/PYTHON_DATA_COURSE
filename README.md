@@ -4,12 +4,12 @@ This project was born from my journey to becoming a Data Analyst — I wanted to
 
 ## Dataset
 
-This analysis uses a dataset of **785,000+ job postings** for data-related roles in the United States (2023), sourced from the [data_jobs](https://huggingface.co/datasets/lukebarousse/data_jobs) Hugging Face dataset. It includes job titles, salaries, locations, required skills, and company information.
+This analysis uses a dataset of **512,000+ job postings** for data-related roles in the United States (2025), sourced from the [data_jobs](https://huggingface.co/datasets/lukebarousse/data_jobs) dataset. It includes job titles, salaries, locations, required skills, and company information.
 
 ## Questions Explored
 
 1. What are the most demanded skills for the top 3 data roles?
-2. How are in-demand skills trending for Data Analysts throughout 2023?
+2. How are in-demand skills trending for Data Analysts throughout 2025?
 3. How well do jobs and skills pay for Data Analysts?
 4. How do remote vs on-site positions compare in salary and skills?
 5. What are the most optimal skills to learn? (High Demand + High Paying)
@@ -20,7 +20,7 @@ This analysis uses a dataset of **785,000+ job postings** for data-related roles
 - **pandas** - Data manipulation and aggregation
 - **matplotlib & seaborn** - Data visualization
 - **Jupyter Notebooks** - Interactive analysis environment
-- **Hugging Face Datasets** - Data loading
+- **CSV dataset** - Local data loading
 
 ## Project Structure
 
@@ -57,24 +57,24 @@ I identified the top 5 skills for Data Analysts, Data Engineers, and Data Scient
 ![Likelihood of Skills Requested in US Job Postings](Project/images/Likelihood_of_Skills_Requested_in_US_Job_Postings.png)
 
 **Key findings:**
-- **SQL** dominates for Data Analysts (51%) and Data Scientists (51%), while **Python** leads for Data Engineers (68%)
+- **SQL** dominates for Data Analysts (36%) while **Python** leads for Data Scientists (49%) and Data Engineers (63%)
 - Data Engineers require more cloud/infrastructure skills (AWS, Azure, Spark) vs. the analysis tools expected from Analysts (Excel, Tableau)
-- Python is highly valued across all three roles (29%-72%)
+- Python and SQL are highly valued across all three roles
 
 ---
 
-### 2. Skill Trends Over 2023
+### 2. Skill Trends Over 2025
 
-I tracked how the top 5 Data Analyst skills fluctuated month by month throughout 2023, using percentage of total job postings per month.
+I tracked how the top 5 Data Analyst skills fluctuated month by month throughout 2025, using percentage of total job postings per month.
 
 **Notebook:** [2_Skills_Trend.ipynb](Project/2_Skills_Trend.ipynb)
 
 ![Trending Top Skills for Data Analysts in the US](Project/images/Trending_Top_Skills_for_Data_Analysts_in_the_US.png)
 
 **Key findings:**
-- SQL remained the most demanded skill all year, though showing a gradual decline from ~63% to ~53%
-- Excel saw a notable increase starting in September, surpassing Python and Tableau by year's end
-- Python and Tableau stayed relatively stable, while Power BI showed a slight upward trend
+- SQL remained the most demanded skill throughout 2025
+- Excel consistently ranked as the second most in-demand skill
+- Python, Tableau, and SAS rounded out the top 5 with relatively stable demand across months
 
 ---
 
@@ -89,9 +89,9 @@ I examined salary distributions across the top 6 data roles using box plots, the
 ![Highest Paid and Most In-Demand Skills for Data Analysts in the US](Project/images/Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US.png)
 
 **Key findings:**
-- Senior Data Scientists have the highest salary potential (up to $600K), with significant outliers
-- Specialized skills (dplyr, Bitbucket, GitLab) command salaries up to ~$200K but appear in very few postings
-- Foundational skills (Excel, SQL, PowerPoint) are the most in-demand but offer lower median salaries (~$82K-$97K)
+- Senior Data Scientists and Senior Data Engineers have the highest salary potential, with significant outliers
+- Specialized skills (MXNet, Kotlin, FastAPI) command median salaries up to ~$205K but appear in very few postings
+- Foundational skills (Excel, SQL, PowerPoint) are the most in-demand but offer lower median salaries (~$78K-$101K)
 
 ---
 
@@ -108,9 +108,9 @@ I compared remote and on-site positions across data roles to see how they differ
 ![Skills Remote vs On-site for Data Analysts in the US](Project/images/Skills_Remote_vs_Onsite_Data_Analysts_in_the_US.png)
 
 **Key findings:**
-- Engineering roles have the most remote opportunities: Senior Data Engineers (20.2%) and Data Engineers (17.9%), while Data Analysts have the least (7.5%)
-- Remote Data Analysts earn a higher median salary ($87K) compared to on-site positions
-- Remote roles demand higher proficiency in technical skills overall — SQL jumps from 50% (on-site) to 60% (remote), and Python from 27% to 30%
+- Engineering roles have the most remote opportunities: Data Engineers (3.5%) and Senior Data Engineers (3.3%), while Data Analysts have the least (1.1%)
+- Remote Data Analysts earn a slightly higher median salary ($96K) compared to on-site ($95K)
+- Remote roles demand higher proficiency in technical skills overall — SQL jumps from 36% (on-site) to 52% (remote), and Python from 23% to 37%
 
 ---
 
