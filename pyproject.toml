@@ -1,0 +1,15 @@
+[project]
+name = "us-data-jobs-analysis"
+version = "1.0.0"
+description = "Analysis of the US data job market: skills demand, salary trends, and optimal skills for data professionals"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "adjusttext>=1.3.0",
+    "datasets>=4.5.0",
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.8",
+    "nbconvert>=7.17.0",
+    "pandas>=3.0.0",
+    "seaborn>=0.13.2",
+]
