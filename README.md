@@ -139,7 +139,7 @@ I created a scatter plot mapping skill demand percentage against median salary, 
 
 ```bash
 # Clone the repository
-git clone [TODO: tu-url-del-repo]
+git clone https://github.com/eliasfigueroa22/PYTHON_DATA_COURSE.git
 
 # Install dependencies (requires uv)
 uv sync
